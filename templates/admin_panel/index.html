@@ -1,0 +1,27 @@
+{% load static %}
+
+{% include 'layout/css_layout.html' %}
+    <!-- Left Panel -->
+
+    
+    {% include 'layout/nav_bar.html' %}
+    <!-- Left Panel -->
+
+    <!-- Right Panel -->
+
+    <div id="right-panel" class="right-panel">
+
+        <!-- Header-->
+        {% include 'layout/header.html' %}
+        <!-- Header-->
+        {% block maincontent %}
+
+        {% endblock maincontent %}
+ <!-- .content -->
+    </div><!-- /#right-panel -->
+
+    <!-- Right Panel -->
+
+    {% include 'layout/script_layout.html' %}
+
+   
