@@ -1,0 +1,57 @@
+{% extends 'admin_panel/index.html' %}
+{% block maincontent %}
+<div class="content mt-3">
+<div class="animated fadeIn `">
+    <form>
+        <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <strong> Expense </strong>
+                    </div>
+                    <div class="card-body card-block">
+                        <form action="" method="POST" enctype="multipart/form-data" class="form-horizontal">
+
+                            <div class="row form-group">
+                                <div class=" col-md-2"><label for="text-input" class=" form-control-label">Attach Report</label></div>
+                                <div class="col-12 col-md-7"><input type="file" id="text-input" name="text-input" placeholder="Attach Report" class="form-control"></div>
+                            </div>
+
+                            <div class="row form-group">
+                                    <div class=" col-md-2"><label for="text-input" class=" form-control-label"> Name</label></div>
+                                    <div class="col-12 col-md-7"><input type="text" id="text-input" name="text-input" placeholder=" Name" class="form-control"></div>
+                                </div>
+                            <div class="row form-group">
+                                <div class=" col-md-2"><label for="textarea-input" class=" form-control-label">Note</label></div>
+                                <div class="col-12 col-md-7"><textarea name="textarea-input" id="textarea-input" rows="4" cols="60"  ></textarea></div>
+                            </div>
+
+                            <div class="row form-group">
+                                <div class=" col-md-2"><label for="text-input" class=" form-control-label">Expense Category</label></div>
+                                <div class="col-12 col-md-7"><input type="text" id="text-input" name="text-input" placeholder="Expense Category" class="form-control"></div>
+                            </div>
+                            <div class="row form-group">
+                                <div class=" col-md-2"><label for="text-input" class=" form-control-label">Expense Date</label></div>
+                                <div class="col-12 col-md-7"><input type="Date" id="text-input" name="text-input" placeholder="Expense Date" class="form-control"></div>
+                            </div>
+                            <div class="row form-group">
+                                <div class=" col-md-2"><label for="text-input" class=" form-control-label">Amount</label></div>
+                                <div class="col-12 col-md-7"><input type="text" id="text-input" name="text-input" placeholder="Sales Team" class="form-control"></div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-sm">
+                                <i class="fa fa-dot-circle-o"></i> Submit
+                            </button>
+
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+
+
+</div>
+</div>
+
+{% endblock maincontent %}
