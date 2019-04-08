@@ -1,0 +1,84 @@
+{% extends 'admin_panel/index.html' %}
+{% block maincontent %}
+
+   <div class="col-lg-12">
+    <div class="card">
+        <div class="card-header">
+            Estimate
+
+        </div>
+        <div class="card-body card-block">
+            <form action="" method="post" class="form-horizontal">
+                <div class="row form-group">
+                    <div class="col col-md-8">Customer name<select style="margin-top:10px;"  class="form-control" placeholder="Customer name">
+                            <option>Choose</option>
+
+                        </select></div>
+                </div>
+                <button type="button" style="margin-left:430px; " class="btn btn-lg btn-dark"  disabled> Billing Address</button>
+                <div class="row form-group" style="margin-top:10px;">
+                    <div class="col col-md-4"><input type="text" placeholder="Street" class="form-control"></div>
+                    <div class="col col-md-4"><input type="text" placeholder="City" class="form-control"></div>
+                    <div class="col col-md-4"><input type="text" placeholder="State" class="form-control"></div>
+                </div>
+                <div class="row form-group" style="margin-top:10px;">
+                    <div class="col col-md-6"><input type="text" placeholder="Zip Code" class="form-control"></div>
+                    <div class="col col-md-6"><input type="text" placeholder="Country" class="form-control"></div>
+                </div>
+                <button type="button" style="margin-left:430px; " class="btn btn-lg btn-dark"  disabled> Shipping Address</button>
+                <div class="row form-group" style="margin-top:10px;">
+                    <div class="col col-md-4"><input type="text" placeholder="Street" class="form-control"></div>
+                    <div class="col col-md-4"><input type="text" placeholder="City" class="form-control"></div>
+                    <div class="col col-md-4"><input type="text" placeholder="State" class="form-control"></div>
+                </div>
+                <div class="row form-group" style="margin-top:10px;">
+                    <div class="col col-md-6"><input type="text" placeholder="Zip code" class="form-control"></div>
+                    <div class="col col-md-6"><input type="text" placeholder="Country" class="form-control"></div>
+                </div>
+
+                <div class="row form-group" style="margin-top:10px;">
+
+                    <div class="col col-md-4">Estimate Number<input type="text" placeholder="Estimate Number(Ber code)" class="form-control"></div>
+                    <div class="col col-md-4">Estimate Date<input type="Date" placeholder="Estimate Date" class="form-control"></div>
+                    <div class="col col-md-4">Expire Date<input type="Date" placeholder="Expire Date" class="form-control"></div>
+
+                </div>
+
+                <div class="row form-group" style="margin-top:20px;">
+                    <div class="col col-md-4">Currency<select  class="form-control" placeholder="Status">
+                            <option>Choose</option>
+
+                        </select></div>
+                    <div class="col col-md-4">Status<select  class="form-control" placeholder="Currency">
+                            <option>Choose</option>
+                            <option>Draft</option>
+                            <option>Sent</option>
+                            <option>Open</option>
+                            <option>Revised</option>
+                            <option>Declined</option>
+                            <option>Accepted</option>
+                        </select></div>
+                    <div class="col col-md-4">Sale agent<select  class="form-control" placeholder="Sale Agent">
+                            <option>Choose</option>
+                        </select></div>
+                </div>
+
+                 <div class="row form-group" style="margin-top:10px;">
+                    <div class="col col-md-6" style="margin-top:30px">Discount type<select   class="form-control" placeholder="Discount type">
+                            <option>Choose</option>
+                            <option>Before Tax</option>
+                            <option>After Tax</option>
+
+                        </select></div>
+                    <div class="col col-md-6">Admin Note<textarea class="form-control" cols="4" rows="4"></textarea></div>
+
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm" style="margin-top:15px;">
+                    <i class="fa fa-dot-circle-o"></i> Submit
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock maincontent %}

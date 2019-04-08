@@ -6,3 +6,6 @@ from django.contrib.auth.decorators import login_required
 @login_required
 def sale(request):
     return render(request, 'admin_panel/proposal.html')
+
+def estimate(request):
+    return render(request, 'admin_panel/estimate.html')

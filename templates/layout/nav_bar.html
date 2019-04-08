@@ -19,32 +19,32 @@
                 </li>
                 <h3 class="menu-title">CRM</h3><!-- /.menu-title -->
                 <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Customer</a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Customer</a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="fa fa-puzzle-piece"></i><a href="{% url 'customer_details' %}">Customer Details</a></li>
                           <li><i class="fa fa-puzzle-piece"></i><a href="{% url 'customer_agent' %}">Customer Agent</a></li>
                     </ul>
                 </li>
                 <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Sales</a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Sales</a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li><i class="fa fa-table"></i><a href="{% url 'sales' %}">Proposal</a></li>
-                        <li><i class="fa fa-table"></i><a href="Estimate.html">Estimate</a></li>
-                        <li><i class="fa fa-table"></i><a href="Invoice.html">Invoices</a></li>
+                        <li><i class="fa fa-th"></i><a href="{% url 'sales' %}">Proposal</a></li>
+                        <li><i class="fa fa-th"></i><a href="{% url 'estimate' %}">Estimate</a></li>
+                        <li><i class="fa fa-th"></i><a href="Invoice.html">Invoices</a></li>
                     </ul>
                 </li>
                 <li class="menu-item-has-children dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Products</a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li><i class="menu-icon fa fa-th"></i><a href="category.html">Category</a></li>
-                        <li><i class="menu-icon fa fa-th"></i><a href="sub_category.html">Sub Category</a></li>
-                        <li><i class="menu-icon fa fa-th"></i><a href="item.html">Item</a></li>
-                        <li><i class="menu-icon fa fa-th"></i><a href="status.html">Status</a></li>
+                        <li><i class="menu-icon fa fa-th"></i><a href="{% url 'category' %}">Category</a></li>
+                        <li><i class="menu-icon fa fa-th"></i><a href="{% url 'subcategory' %}">Sub Category</a></li>
+                        <li><i class="menu-icon fa fa-th"></i><a href="{% url 'item' %}">Item</a></li>
+                        <li><i class="menu-icon fa fa-th"></i><a href="{% url 'status' %}">Status</a></li>
                     </ul>
                 </li>
 
                 <li>
-                    <a href="widgets.html"> <i class="menu-icon fa fa-th"></i>Expense </a>
+                    <a href="{% url 'expense' %}"> <i class="menu-icon fa fa-th"></i>Expense </a>
                 </li>
                 <li>
                     <a href="widgets.html"> <i class="menu-icon fa fa-th"></i>Contract </a>
@@ -54,13 +54,13 @@
                 </li>
 
                 <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Report</a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Report</a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li><i class="menu-icon fa fa-fort-awesome"></i><a href="font-fontawesome.html">Invoice Report</a></li>
-                        <li><i class="menu-icon ti-themify-logo"></i><a href="font-themify.html">Item Report</a></li>
-                        <li><i class="menu-icon ti-themify-logo"></i><a href="font-themify.html">Payment Received</a></li>
-                        <li><i class="menu-icon ti-themify-logo"></i><a href="font-themify.html">Customer Report</a></li>
-                          <li><i class="menu-icon ti-themify-logo"></i><a href="font-themify.html">Expense Report</a></li>
+                        <li><a href="font-fontawesome.html">Invoice Report</a></li>
+                        <li><a href="font-themify.html">Item Report</a></li>
+                        <li><a href="font-themify.html">Payment Received</a></li>
+                        <li><a href="font-themify.html">Customer Report</a></li>
+                          <li><a href="font-themify.html">Expense Report</a></li>
                     </ul>
                 </li>
                 <li>
