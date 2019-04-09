@@ -123,7 +123,7 @@ STATICFILES_DIRS = [
 ]
 
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'asset')
 
 LOGIN_URL = '/dashboard/login'
 LOGIN_REDIRECT_URL = '/dashboard'
