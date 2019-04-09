@@ -17,5 +17,6 @@ urlpatterns = [
     path('subcategory',product_views.subcategory,name="subcategory"),
     path('item',product_views.item,name="item"),
     path('status',product_views.status,name="status"),
-    path('expense',expense_contract_views.expense,name="expense")
+    path('expense',expense_contract_views.expense,name="expense"),
+    path('contract',expense_contract_views.contract,name="contract")
 ]
