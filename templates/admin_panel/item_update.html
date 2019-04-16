@@ -1,0 +1,58 @@
+{% extends 'admin_panel/index.html' %}
+{% block maincontent %}
+
+<div class="content mt-3">
+        <div class="animated">
+                    <!-- Button trigger modal -->
+         
+                        <div class="modal-body">
+                          <form method="POST" action="" enctype="multipart/form-data">
+                            {% csrf_token %}
+                               <div class="form-row" style="margin-left:30px;">
+                                 <div class="form-group col-md-11">
+                                   <label for="inputState">Category</label>
+                                   {{form.itemcategory_name}}
+                                  
+                                 </div>
+                               </div>
+
+                               <div class="form-row" style="margin-left:30px;">
+                                 <div class="form-group col-md-11">
+                                   <label for="inputState">Sub Category</label>
+                                  {{form.itemsubcategory_name}}
+                                 
+                                 </div>
+                               </div>
+
+                               <div class="form-row" style="margin-left:30px;">
+                                 <div class="form-group col-md-11">
+                                   <label for="inputPassword4">Product Name</label>
+                                   {{form.product_name}}
+                                  
+                                 </div>
+                               </div>
+
+                               <div class="form-row" style="margin-left:30px;">
+                               <div class="form-group col-md-11">
+                                 <label for="inputAddress">Image</label>
+                                 <input type="file" class="form-control" name="item_image">
+                                
+                               </div>
+                             </div>
+
+
+                             <button type="submit" class="btn btn-primary">Save</button>
+
+
+                              
+                              </form>
+                        </div>
+                    </div>
+                </div>
+           
+
+  
+
+     
+
+{% endblock maincontent %}
