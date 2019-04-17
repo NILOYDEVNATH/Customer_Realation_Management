@@ -2,7 +2,7 @@
 {% block maincontent %}
 <div class="content mt-3">
 <div class="animated fadeIn `">
-    <form>
+  
         <div class="col-lg-12">
                 <div class="card">
                     <div class="card-header">
@@ -10,103 +10,118 @@
                     </div>
                     <div class="card-body card-block">
                         <form action="" method="POST" enctype="multipart/form-data" class="form-horizontal">
+                          {% csrf_token %}
                           <div class="form-row">
                             <div class="form-group col-md-6">
                               <label for="inputEmail4">Company name</label>
-                              <input type="text" class="form-control" id="inputEmail4" placeholder="Company Name">
+                              {{form.company_name}}
                             </div>
                             <div class="form-group col-md-6">
                               <label for="inputPassword4">Phone</label>
-                              <input type="text" class="form-control" id="inputPassword4" placeholder="Phone">
+                              {{form.phone}}
                             </div>
                           </div>
                           <div class="form-row">
                             <div class="form-group col-md-6">
                               <label for="inputEmail4">Web site</label>
-                              <input type="text" class="form-control" id="inputEmail4" placeholder="Web site">
+                              {{form.website}}
                             </div>
                             <div class="form-group col-md-6">
                               <label for="inputPassword4">Vat number</label>
-                              <input type="text" class="form-control" id="inputPassword4" placeholder="Vat number">
+                              {{form.vat_number}}
                             </div>
                           </div>
                           <div class="form-row">
                           <div class="form-group col-md-12">
                             <label for="inputAddress">Address</label>
-                            <textarea class="form-control" placeholder="Address" style="height: 128px;"></textarea>
+                            {{form.address}}
                           </div>
                       
                         </div>
                           <div class="form-row">
                             <div class="form-group col-md-4">
                               <label for="inputCity">City</label>
-                              <input type="text" class="form-control" id="inputCity">
+                              {{form.city}}
                             </div>
                             <div class="form-group col-md-4">
                               <label for="inputState">State</label>
-                              <select id="inputState" class="form-control">
-                                <option selected>Choose...</option>
-                                <option>...</option>
-                              </select>
+                              {{form.state}}
                             </div>
                             <div class="form-group col-md-4">
                               <label for="inputZip">Zip</label>
-                              <input type="text" class="form-control" id="inputZip">
+                              {{form.zip_code}}
                             </div>
                           </div>
+                         
                           <div class="form-row">
                             <div class="form-group col-md-4">
                               <label for="inputState">Groups(Multiple)</label>
-                              <select id="inputState" class="form-control">
-                                <option selected>Choose...</option>
-                                <option>...</option>
-                              </select>
+                              <div class="form-check">
+                                <div class="checkbox">
+                                    <label for="checkbox1" class="form-check-label ">
+                                        <input type="checkbox" id="checkbox1" name="groups[]" value="High Budget" class="form-check-input"> High Budget
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label for="checkbox2" class="form-check-label ">
+                                        <input type="checkbox" id="checkbox2" name="groups[]" value="Low Budget" class="form-check-input"> Low Budget
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label for="checkbox3" class="form-check-label ">
+                                        <input type="checkbox" id="checkbox3" name="groups[]" value="Vip" class="form-check-input">  VIP
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                  <label for="checkbox3" class="form-check-label ">
+                                      <input type="checkbox" id="checkbox3" name="groups[]" value="Whole Saler" class="form-check-input">  Whole Saler
+                                  </label>
+                              </div>
+                            </div>
                             </div>
                             <div class="form-group col-md-4">
                               <label for="inputCity">Country</label>
-                              <input type="text" class="form-control" id="inputCity">
+                              {{form.country}}
                             </div>
                             <div class="form-group col-md-4">
                               <label for="inputZip">Image</label>
-                              <input type="file" name="Image" id="inputZip">
+                              <input type="file" name="image" id="inputZip">
                             </div>
                           </div>
+                          
                           <div class="form-row">
                             <div class="form-group col-md-4">
                               <label for="inputState">Default Language</label>
                               <select id="inputState" class="form-control">
                                 <option selected>Choose...</option>
-                                <option>...</option>
+                                <option>ssss</option>
                               </select>
                             </div>
                           </div>
                       
-                          <button type="button" style="margin-left:430px;" class="btn btn-lg btn-dark" disabled> Billing Address</button>
+                           <button type="button" style="margin-left:430px;" class="btn btn-lg btn-dark" disabled> Billing Address</button>
                           <div class="form-row" style="margin-top:20px;">
                             <div class="form-group col-md-4">
                               <label for="inputCity">Street</label>
-                              <input type="text" class="form-control" id="inputCity">
+                             {{billing.street_billing}}
                             </div>
                             <div class="form-group col-md-4">
                               <label for="inputZip">City</label>
-                              <input type="text" class="form-control" id="inputZip">
+                              {{billing.city_billing}}
                             </div>
                             <div class="form-group col-md-4">
                               <label for="inputZip">State</label>
-                              <input type="text" class="form-control" id="inputZip">
+                              {{billing.state_billing}}
                             </div>
                           </div>
                           <div class="form-row" style="margin-top:20px;">
                             <div class="form-group col-md-6">
                               <label for="inputCity">Zip code</label>
-                              <input type="text" class="form-control" id="inputCity">
+                              {{billing.zip_code_billing}}
                             </div>
                             <div class="form-group col-md-6">
                               <label for="inputState">Country</label>
-                              <select id="inputState" class="form-control">
-                                <option selected>Choose...</option>
-                                <option>...</option>
-                              </select>
+                              {{billing.country_billing}}
                             </div>
                           </div>
                       
@@ -132,16 +147,11 @@
                             </div>
                             <div class="form-group col-md-6">
                               <label for="inputState">Country</label>
-                              <select id="inputState" class="form-control">
-                                <option selected>Choose...</option>
-                                <option>...</option>
-                              </select>
+                              <input type="text" class="form-control" id="inputCity">
                             </div>
-                          </div>
+                          </div> 
                            
-                            <button type="submit" class="btn btn-primary btn-sm">
-                                <i class="fa fa-dot-circle-o"></i> Submit
-                            </button>
+                    <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-dot-circle-o"></i> Submit</button>
 
                             
                         </form>
@@ -149,7 +159,7 @@
                    
                 </div>
             </div>    
-        </form>    
+      
 
         
 </div>
